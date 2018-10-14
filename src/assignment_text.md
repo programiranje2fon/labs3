@@ -11,7 +11,7 @@ Create the class **ComplexCalculator** in package **p1** with:
 
 3. The method **divideMod** that takes two integers as its parameters, divides the first one by the second one, and returns the remainder. **(MOD (%) - the remainder in integer division)**
 
-4. The method **print50times** that prints on the screen 50 times the integer that it takes as a parameter. **(FOR loop, loop exit condition, loop counter, incrementing loop counter)**
+4. The method **print50Times** that prints on the screen 50 times the integer that it takes as a parameter. **(FOR loop, loop exit condition, loop counter, incrementing loop counter)**
 
 5. The method **printUpTo100** that prints on the screen the numbers between 1 and 100. **(using the loop counter within the loop)**
 
