@@ -1,6 +1,6 @@
 package p2;
 
-public class ComplexCalculator {
+public class ComplexCalculator2 {
 
 	void ispisi55Do0() {
 		// Brojeve treba ispisati u opadajucem

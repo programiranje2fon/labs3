@@ -9,15 +9,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import p2.ComplexCalculator;
+import p2.ComplexCalculator2;
 
 public class ComplexCalculator2Test {
 
-	ComplexCalculator instance;
+	ComplexCalculator2 instance;
 
 	@Before
 	public void setUp() throws Exception {
-		instance = new ComplexCalculator();
+		instance = new ComplexCalculator2();
 	}
 
 	@After
@@ -59,13 +59,13 @@ public class ComplexCalculator2Test {
 
 	@Test(timeout = 2000)
 	public void method_factorial() {
-		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator.faktorijel(6));
+		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator2.faktorijel(6));
 	}
 
 	@Test(timeout = 2000)
 	public void method_ABN() {
 		assertEquals("Za unete brojeve A = 2, B = 4 i N = 3 metoda ne vraca 216", 216.0,
-				ComplexCalculator.ABN(2, 4, 3), 0.001);
+				ComplexCalculator2.ABN(2, 4, 3), 0.001);
 	}
 
 }
