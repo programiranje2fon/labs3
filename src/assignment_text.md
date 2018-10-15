@@ -21,7 +21,7 @@ Create the class **ComplexCalculator** in package **p1** with:
 
 8. The static method **minPower2** that takes as its parameter an integer X and calculates and returns the smallest power of 2 that is greater than X. Example: given the input parameter 6, the method returns 8 (2 powered by 3) since it is the smallest power of 2 that is greater than 6. **(WHILE loop, loop exit condition)**
 
-9. The static method **divideBy2** that takes an integer parameter, divides it by 2 as long as the number remains greater than 1, and prints the result on the screen after each division. Example: if the parameter value is 33, the method prints 16 (the result of the first division by 2), 8 (the result of the second division by 2), 4 (the result of the third division by 2), and 2 (the result of the last division by 2).
+9. The static method **divideBy2** that takes an integer parameter, divides it by 2 as long as the number remains greater than 1, and prints the result on the screen after each division. Example: if the parameter value is 33, the method prints 16 (the result of the first division by 2), 8 (the result of the second division by 2), 4 (the result of the third division by 2), and 2 (the result of the fourth division by 2), 1 (the result of the last division by 2).
 
 Create the **TestComplexCalculator** class in package **p1** that calls one static and one non-static method of ComplexCalculator. **(static method call)**
 
