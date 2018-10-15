@@ -35,7 +35,7 @@ public class ComplexCalculator2Test {
 			// Redirekcija
 			System.setOut(new PrintStream(buffer));
 
-			instance.ispisi55Do0();
+			instance.print55To0();
 
 			System.out.flush();
 
@@ -59,7 +59,7 @@ public class ComplexCalculator2Test {
 
 	@Test(timeout = 2000)
 	public void method_factorial() {
-		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator2.faktorijel(6));
+		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator2.factorial(6));
 	}
 
 	@Test(timeout = 2000)

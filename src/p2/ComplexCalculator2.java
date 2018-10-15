@@ -2,17 +2,12 @@ package p2;
 
 public class ComplexCalculator2 {
 
-	void ispisi55Do0() {
-		// Brojeve treba ispisati u opadajucem
-		// redosledu (55,54,53,...2,1,0) pa se
-		// moze postaviti da brojac petlje ide
-		// od vece vrednosti ka manjoj tj. da se
-		// umanjuje za jedan u svakom koraku.
+	void print55To0() {
 		for (int i = 55; i >= 0; i--)
 			System.out.println(i);
 	}
 
-	static int faktorijel(int n) {
+	static int factorial(int n) {
 		int f = 1;
 		for (int i = 1; i <= n; i++)
 			f = f * i;
