@@ -26,7 +26,7 @@ public class ComplexCalculator2Test {
 	}
 
 	@Test(timeout = 2000)
-	public void testPrint55To0() {
+	public void method_print55To0() {
 		PrintStream pom = System.out;
 		try {
 			// Otvoren outputstream za redirekciju System.out
@@ -58,12 +58,12 @@ public class ComplexCalculator2Test {
 	}
 
 	@Test(timeout = 2000)
-	public void testFactorial() {
+	public void method_factorial() {
 		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator.faktorijel(6));
 	}
 
 	@Test(timeout = 2000)
-	public void testABN() {
+	public void method_ABN() {
 		assertEquals("Za unete brojeve A = 2, B = 4 i N = 3 metoda ne vraca 216", 216.0,
 				ComplexCalculator.ABN(2, 4, 3), 0.001);
 	}

@@ -41,7 +41,7 @@ public class ComplexCalculatorTest {
 	}
 
 	@Test(timeout = 2000)
-	public void testPrint50Times() {
+	public void method_print50Times() {
 		PrintStream pom = System.out;
 		try {
 			// Otvoren outputstream za redirekciju System.out
@@ -111,13 +111,13 @@ public class ComplexCalculatorTest {
 	}
 
 	@Test(timeout = 2000)
-	public void testPowerX() {
+	public void method_powerX() {
 		assertEquals("Za unete brojeve X = 3.0 i N = 4 metoda ne vraca 81", 81.0, ComplexCalculator.powerX(3.0, 4),
 				0.001);
 	}
 
 	@Test(timeout = 2000)
-	public void testMinPower2() {
+	public void method_minPower2() {
 		assertEquals("Za unet broj 55 metoda ne vraca 64", 64, ComplexCalculator.minPower2(55));
 
 	}
