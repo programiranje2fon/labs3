@@ -11,7 +11,7 @@ Create the class **ComplexCalculator** in package **p1** with:
 
 3. The method **divideMod** that takes two integers as its parameters, and returns the remainder resulting from the division of the first number by the second. 
 
-4. The method **print50times** that prints 50 times (on the console) the integer that it takes as a parameter. 
+4. The method **print50Times** that prints 50 times (on the console) the integer that it takes as a parameter. 
 
 5. The method **printUpTo100** that prints on the screen numbers between 1 and 100. 
 
@@ -31,7 +31,7 @@ Create the **TestComplexCalculator** class in package **p1** that calls one stat
 
 Create the class **ComplexCalculator2** in package **p2** with:
 
-1. The method **print55to0** that prints on the screen the numbers 0 to 55, but in the reversed order (55,54,53,52....1,0).
+1. The method **print55To0** that prints on the screen the numbers 0 to 55, but in the reversed order (55,54,53,52....1,0).
 
 2. The static method **factorial** that takes an integer N as its parameter and calculates and returns its factorial:  N! = 1x2x...x(N-1)xN
 
