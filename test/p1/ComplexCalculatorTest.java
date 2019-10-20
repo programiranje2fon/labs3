@@ -13,7 +13,7 @@ import p1.ComplexCalculator;
 
 public class ComplexCalculatorTest {
 
-	ComplexCalculator instance;
+	private ComplexCalculator instance;
 
 	@Before
 	public void setUp() throws Exception {
@@ -27,17 +27,17 @@ public class ComplexCalculatorTest {
 
 	@Test
 	public void method_divideDoubleDouble() {
-		assertEquals("Kad se podele 6.4 i 2.0 rezultat nije 3.2", 3.2, instance.divide(6.4, 2.0), 0.001);
+		assertEquals("When divided 6.4 with 2.0, the result is not 3.2", 3.2, instance.divide(6.4, 2.0), 0.001);
 	}
 
 	@Test
 	public void method_divideIntInt() {
-		assertEquals("Kad se podele 5 i 2 rezultat nije 2", 2, instance.divide(5, 2));
+		assertEquals("When divided 5 with 2, the result is not 2", 2, instance.divide(5, 2));
 	}
 
 	@Test
 	public void method_divideMod() {
-		assertEquals("Kad se podele 8 i 3 ostatak nije 2", 2, instance.divideMod(8, 3));
+		assertEquals("When divided 8 with 3, the division remainder is not 2", 2, instance.divideMod(8, 3));
 	}
 
 	@Test(timeout = 2000)
@@ -65,7 +65,7 @@ public class ComplexCalculatorTest {
 			for (int i = 1; i <= 50; i++)
 				s = s + "12" + System.lineSeparator();
 
-			assertEquals("Ako se unese broj 12, NE ispisuje se 50 puta", s.trim(), ispis.trim());
+			assertEquals("If the 12 is passed, it is NOT printed 50 times to the output", s.trim(), ispis.trim());
 		} catch (Exception e) {
 			System.setOut(pom);
 			e.printStackTrace();
@@ -98,7 +98,7 @@ public class ComplexCalculatorTest {
 			for (int i = 1; i <= 100; i++)
 				s = s + i + System.lineSeparator();
 
-			assertEquals("NE ispisuju se brojevi od 1 do 100", s.trim(), ispis.trim());
+			assertEquals("Numbers from 1 to 100 are not printed to the output", s.trim(), ispis.trim());
 		} catch (Exception e) {
 			System.setOut(pom);
 			e.printStackTrace();
@@ -107,18 +107,18 @@ public class ComplexCalculatorTest {
 
 	@Test(timeout = 2000)
 	public void method_sum() {
-		assertEquals("Za unet broj 12 metoda ne vraca sumu 78", 78, ComplexCalculator.sum(12));
+		assertEquals("For the argument 12, the method does not return the sum of 78", 78, ComplexCalculator.sum(12));
 	}
 
 	@Test(timeout = 2000)
 	public void method_powerX() {
-		assertEquals("Za unete brojeve X = 3.0 i N = 4 metoda ne vraca 81", 81.0, ComplexCalculator.powerX(3.0, 4),
+		assertEquals("For the arguments X = 3.0 and N = 4, the method does not return 81", 81.0, ComplexCalculator.powerX(3.0, 4),
 				0.001);
 	}
 
 	@Test(timeout = 2000)
 	public void method_minPower2() {
-		assertEquals("Za unet broj 55 metoda ne vraca 64", 64, ComplexCalculator.minPower2(55));
+		assertEquals("For the argument 55, the method does not return 64", 64, ComplexCalculator.minPower2(55));
 
 	}
 
@@ -145,7 +145,7 @@ public class ComplexCalculatorTest {
 			String s = "16" + System.lineSeparator() + "8" + System.lineSeparator() + "4" + System.lineSeparator() + "2"
 					+ System.lineSeparator() + "1";
 
-			assertEquals("Za unet broj 33 NE ispisuju se brojevi 16 8 4 2 1", s.trim(), ispis.trim());
+			assertEquals("For the argument 33, the method does not print to the output the following: 16 8 4 2 1", s.trim(), ispis.trim());
 		} catch (Exception e) {
 			System.setOut(pom);
 			e.printStackTrace();

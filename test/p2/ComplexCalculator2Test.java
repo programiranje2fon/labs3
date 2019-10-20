@@ -13,7 +13,7 @@ import p2.ComplexCalculator2;
 
 public class ComplexCalculator2Test {
 
-	ComplexCalculator2 instance;
+	private ComplexCalculator2 instance;
 
 	@Before
 	public void setUp() throws Exception {
@@ -50,7 +50,7 @@ public class ComplexCalculator2Test {
 			for (int i = 55; i >= 0; i--)
 				s = s + i + System.lineSeparator();
 
-			assertEquals("NE ispisuju se brojevi od 55 do 0", s.trim(), ispis.trim());
+			assertEquals("Numbers from 55 to 0 are not printed to the output", s.trim(), ispis.trim());
 		} catch (Exception e) {
 			System.setOut(pom);
 			e.printStackTrace();
@@ -59,12 +59,12 @@ public class ComplexCalculator2Test {
 
 	@Test(timeout = 2000)
 	public void method_factorial() {
-		assertEquals("Za unet broj N = 6 metoda ne vraca 720", 720, ComplexCalculator2.factorial(6));
+		assertEquals("For the argument 6, the method does not return 720", 720, ComplexCalculator2.factorial(6));
 	}
 
 	@Test(timeout = 2000)
 	public void method_ABN() {
-		assertEquals("Za unete brojeve A = 2, B = 4 i N = 3 metoda ne vraca 216", 216.0,
+		assertEquals("For the arguments A = 2, B = 4 and N = 3, the method does not return 216", 216.0,
 				ComplexCalculator2.ABN(2, 4, 3), 0.001);
 	}
 
